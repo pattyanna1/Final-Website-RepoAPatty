@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+  <style>
+    section>div.carousel-area {
+      width: 100%;
+      padding: 0px 40px 0px 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/logo.png" alt="CA logo"/>
+  <nav>
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#" class="active-page">GALLERY</a>
+        </li>
+        <li>
+          <a href="events.html">EVENTS</a>
+        </li>
+        <li>
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="team.html">TEAM</a>
+        </li>
+        <li>
+          <a href="journal.html">JOURNAL</a>
+        </li>
+      </ul>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="#" class="active-menu-item">GALLERY</a>
+        <a href="events.html">EVENTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="team.html">TEAM</a>
+        <a href="journal.html">JOURNAL</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 100%; float: left; ">
+      
+        <!-- TODO: add content -->
+
+        <section>
+          <div class="carousel-area">
+            <h5>SPRING 2023</h5>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>
+      
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./assets/images/Mamoo-Jill-Neil-12.jpg" alt="play" style="width:100%;" />
+                  <div class="carousel-caption">
+                    <h3>play</h3>
+                  </div>
+                </div>
+      
+                <div class="item">
+                  <img src="./assets/images/Mamoo-Jill-Neil-33.jpg" alt="explore" style="width:100%;" />
+                  <div class="carousel-caption">
+                    <h3>explore</h3>
+                  </div>
+                </div>
+
+                <div class="item active">
+                  <img src="./assets/images/Mamoo-Jill-Neil-77.jpg" alt="purpose" style="width:100%;" />
+                  <div class="carousel-caption">
+                    <h3>purpose</h3>
+                  </div>
+                </div>
+      
+                <div class="item">
+                  <img src="./assets/images/Mamoo-Jill-Neil-123.jpg" alt="adventure" style="width:100%;" />
+                  <div class="carousel-caption">
+                    <h3>adventure</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="./assets/images/Mamoo-Jill-Neil-95.jpg" alt="reflection" style="width:100%;" />
+                  <div class="carousel-caption">
+                    <h3>reflection</h3>
+                  </div>
+                </div>
+
+              </div>
+      
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">next</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+        
+      </div>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+      <div>
+       
+      </div>
+    </aside>
+  </section>
+  <div class="to-top"><a href="#"></a></div>
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+
+  <!-- jquery.min.js should be loaded before bootstrap.min.js because bootstrap's JavaScript requires jQueary -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

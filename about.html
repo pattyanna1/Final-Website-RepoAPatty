@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+
+  <!-- animated accordian text -->
+  <style>
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+    
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    </style>
+
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/logo.png" alt="dish logo"/>
+  <nav>
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="gallery.html">GALLERY</a>
+        </li>
+        <li>
+          <a href="events.html">EVENTS</a>
+        </li>
+        <li>
+          <a href="#" class="active-page">ABOUT</a>
+        </li>
+        <li>
+          <a href="team.html">TEAM</a>
+        </li>
+        <li>
+          <a href="journal.html">JOURNAL</a>
+        </li>
+      </ul>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="events.html">EVENTS</a>
+        <a href="#" class="active-menu-item">ABOUT</a>
+        <a href="team.html">TEAM</a>
+        <a href="journal.html">JOURNAL</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 100%; float: left; ">
+    
+        <!-- TODO: add content -->
+        <p>
+        <img style="float: left; max-width: 300px; padding-right: 15px: padding-bottom: 10 px;"
+        src="./assets/images/about2.jpg" alt="Kids on the Lifeguard"/>
+        <p>Welcome! We're thrilled that you're interested in learning more about who we are and what we do.</p>
+
+        <p>Our company was founded with a simple mission: to make a positive impact in the world. We believe that by providing high-quality products and services, we can help people live happier, healthier, and more fulfilling lives.
+        
+        Our team is made up of passionate and dedicated individuals from a wide range of backgrounds and experiences. We come together every day to collaborate, innovate, and find new ways to achieve our goals.</p>
+        
+        <p>Whether you're a customer, a partner, or just someone who wants to learn more about us, we welcome you to explore our website, connect with us on social media, and get in touch with any questions or feedback you may have.</p>
+        
+        
+        <img style="float: right; max-width: 450px; padding-right: 15px: padding-bottom: 10 px;"
+        src="./assets/images/about3.jpg" alt="Kids Standing Near Beach"/>
+        <p>Thank you for your interest in our company, and we look forward to continuing to serve you in the years to come!</p>  <p>We are a team of professionals dedicated to providing high-quality services and products to our customers. Our mission is to exceed your expectations by delivering exceptional customer service, innovative solutions, and reliable results.
+
+        We specialize in various fields such as technology, marketing, design, and more. Our team members are experts in their respective fields and are committed to staying up-to-date with the latest trends and technologies. This allows us to provide you with the best possible solutions and products.</p>
+        
+        Our values include integrity, professionalism, and transparency. We believe in building strong relationships with our clients by understanding their needs and providing customized solutions. We are committed to delivering our services on time and within budget while maintaining the highest standards of quality.
+        
+        <p>We pride ourselves on our ability to think creatively and find unique solutions to complex problems. We strive to create an environment that fosters innovation and encourages our team members to share their ideas and expertise.
+        
+        Thank you for considering us for your next project. We look forward to working with you and helping you achieve your goals.
+      
+        </p>
+
+        <!-- animated accordion -->
+        <h2></h2>
+<p></p>
+
+<button class="accordion">OUR COMMITMENT</button>
+<div class="panel">
+  <p>We are dedicated to creating beautiful, high-quality fashion pieces that make our customers feel confident and stylish. However, we know that fashion can also have a significant impact on the world around us. That's why we are committed to making a positive difference in everything we do.</p>
+
+    <p>Here are some of the ways we are working towards our commitment to sustainability, ethical production, and social responsibility:</p>
+    <ul>
+    <li>Sustainable Materials:
+    We are committed to reducing our impact on the environment by using sustainable materials wherever possible. We source fabrics and materials that are eco-friendly, and we are always looking for ways to improve our production processes to reduce waste.</li>
+    
+    <li>Ethical Production:
+    We believe that every person involved in the creation of our products deserves to be treated fairly and with respect. That's why we work with suppliers and manufacturers who share our commitment to ethical production practices. We visit our factories regularly to ensure that they meet our standards for fair labor practices.</li>
+    
+    <li>Reducing Our Carbon Footprint:
+    We are constantly looking for ways to reduce our carbon footprint and minimize our impact on the environment. We use renewable energy sources in our offices and warehouses, and we are always looking for ways to improve our transportation methods to reduce emissions.</li>
+    
+    <li>Giving Back to Our Communities:
+    We believe in the power of fashion to make a positive impact on the world, and we are committed to giving back to our communities. We partner with organizations that share our values and work to make a difference in the world. From donating a portion of our profits to supporting local charities, we are dedicated to making a difference.</li>
+  </ul>
+   <p>We are committed to doing our part to create a more sustainable, ethical, and responsible fashion industry. We hope that our commitment inspires you to make more conscious choices as well. Together, we can create a brighter future for fashion and our world.</p>
+  
+</p>
+</div>
+
+<button class="accordion">OUR TEAM</button>
+<div class="panel">
+  <p>We are a dedicated and passionate team committed to providing exceptional products and services to our customers. Our team is made up of individuals from diverse backgrounds and skill sets, all working together to achieve our common goal of excellence.</p>
+
+    <p>Our team members bring a wide range of expertise, including marketing, design, engineering, customer service, and project management. We work collaboratively to create innovative solutions that meet the needs of our customers and exceed their expectations.
+    
+    At the core of our team is a shared commitment to integrity, honesty, and transparency. We believe that open communication and a strong work ethic are essential to building long-lasting relationships with our customers and achieving success as a company.</p>
+    
+    <p>We are constantly striving to improve and evolve, always seeking out new ideas and approaches to better serve our customers. We pride ourselves on our ability to adapt to changing market conditions and stay ahead of the curve in our industry.
+    
+    Thank you for taking the time to learn more about our team. We look forward to the opportunity to work with you and demonstrate the exceptional service and expertise that we bring to every project.</p>
+</div>
+
+<button class="accordion">CAREERS</button>
+<div class="panel">
+  <p>At CA, we are always looking for talented individuals to join our team and help us achieve our mission. We are a dynamic and innovative company that values diversity, creativity, and hard work.
+
+    We offer a range of exciting career opportunities in various fields, including engineering, marketing, finance, operations, and more. Whether you are just starting your career or are an experienced professional, we have a place for you.</p>
+    
+   <p>Our employees are our most valuable asset, and we are committed to creating a supportive and inclusive work environment where everyone can thrive. We offer competitive salaries, comprehensive benefits packages, and opportunities for career advancement.
+    
+    If you are passionate about making a difference and want to work for a company that values your skills and expertise, we invite you to explore our current job openings and apply today. Join us on our journey to create a better future for our customers and communities.</p>
+</div>
+
+ <!-- animated accordion script -->
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+      </div>
+    </article>
+    
+  </section>
+  <div class="to-top"><a href="#"></a></div>
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+</html>

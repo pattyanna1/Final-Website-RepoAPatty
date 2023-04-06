@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+
+  <style>
+    .home-page {
+      min-width: 100%;
+      min-height: 100%;
+      position: fixed;
+      right: 0;  /* need to have position set to "fixed" */
+      bottom: 0; /* need to have position set to "fixed" */
+      width: auto;
+      height: auto;
+      background: #eee url(./assets/images/homepage.jpg) no-repeat center;
+      background-size: cover;
+      display: flex;          /* for hero text */
+      justify-content:center; /* for hero text */
+      align-items:center;     /* for hero text */
+      z-index: -1;
+    }
+    h1 {
+      color: #9e9999;
+      font-size: 4em;
+      font-weight: regular;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/logo.png" alt="CA logo"/>
+  <nav>
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="#" class="active-page">HOME</a>
+        </li>
+        <li>
+          <a href="gallery.html">GALLERY</a>
+        </li>
+        <li>
+          <a href="events.html">EVENTS</a>
+        </li>
+        <li>
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="team.html">TEAM</a>
+        </li>
+        <li>
+          <a href="journal.html">JOURNAL</a>
+        </li>
+      </ul>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="#" class="active-menu-item">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="events.html">EVENTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="team.html">TEAM</a>
+        <a href="journal.html">JOURNAL</a>
+      </div>
+    </div>
+  </nav>
+    <section class="home-page"><h1>WEST COAST CLASSICS</h1></section>
+    
+</body>
+</html>

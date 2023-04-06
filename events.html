@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+  <!-- dropdown-menu text scroll -->  
+  <style>
+    div.ex1 {
+      background-color: rgb(251, 252, 252);
+      width: 350px;
+      height: 400px;
+      overflow: scroll;
+    }
+    </style>
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/logo.png" alt="dish logo"/>
+  <nav>
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="gallery.html">GALLERY</a>
+        </li>
+        <li>
+          <a href="#" class="active-page">EVENTS</a>
+        </li>
+        <li>
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="team.html">TEAM</a>
+        </li>
+        <li>
+          <a href="journal.html">JOURNAL</a>
+        </li>
+      </ul>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="#" class="active-menu-item">EVENTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="team.html">TEAM</a>
+        <a href="journal.html">JOURNAL</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 70%; float: left; ">
+      <div style="border-right: 1px solid rgb(181, 181, 181);">
+        <!-- TODO: add content -->
+        <!DOCTYPE html>
+        <html>
+        
+        <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Table Sortable</title>
+          <style>
+            table#your-table-items {
+              border-collapse: collapse;
+              /* in inspector mode - easier to see the difference between collapse and no collapse */
+              border: 1px solid rgba(154, 154, 154, 0.75);
+              text-align: center;
+            }
+        
+            table#your-table-items th:nth-child(1),
+            table#your-table-items td:nth-child(1) {
+              width: 35%;
+            }
+        
+            table#your-table-items th:nth-child(2),
+            table#your-table-items td:nth-child(2) {
+              width: 30%;
+            }
+        
+            table#your-table-items th:nth-child(3),
+            table#your-table-items td:nth-child(3) {
+              width: 20%;
+            }
+        
+            table#your-table-items th:nth-child(4),
+            table#your-table-items td:nth-child(4) {
+              width: 15%;
+            }
+        
+            table#your-table-items thead {
+              font-size: 0.7em;
+              text-transform: uppercase;
+            }
+        
+            table#your-table-items thead th {
+              color: #fff;
+              background-color: rgba(0, 0, 0, 0.6);
+              padding: 8px;
+            }
+        
+            table#your-table-items thead th:hover {
+              color: #fff;
+              background-color: #339999;
+              cursor: pointer;
+            }
+        
+            table#your-table-items thead th.tablesorter-headerAsc,
+            table#your-table-items thead th.tablesorter-headerDesc {
+              background-color: rgba(0, 102, 102, 0.8);
+            }
+        
+            table#your-table-items tbody {
+              font-size: 0.9em;
+              line-height: 15px;
+            }
+        
+            /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+            /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+            table#your-table-items tbody tr:nth-child(even) {
+              background: rgba(154, 154, 154, 0.25);
+            }
+        
+            table#your-table-items tbody tr:hover {
+              color: #fff;
+              background-color: #339999;
+            }
+        
+            table#your-table-items tbody td {
+              padding: 8px 20px;
+              border-top: 1px solid rgba(154, 154, 154, 0.75);
+              border-right: 1px solid rgba(154, 154, 154, 0.75);
+            }
+        
+            table#your-table-items tbody td img {
+              width: 100px;
+              margin: 0 10px 0 0;
+              border: 1px solid rgba(154, 154, 154, 0.75);
+            }
+          </style>
+        </head>
+        
+        <body>
+          <article>
+            <div>
+              <h1>Upcoming Community Events</h1>
+              <p>
+                Our events are designed to provide you with a memorable experience and a chance to connect with others in your community. You'll have the opportunity to meet new people, explore new interests, and create lasting memories with your loved ones.
+                
+                Whether you're looking for family-friendly events or something more tailored to your specific interests, we have something for everyone. </p>
+                <p>So, mark your calendars and join us for some fun-filled community events that you won't want to miss! Check out our event calendar for the latest updates and details.</p>
+              <table id="your-table-items">
+                <thead>
+                  <tr>
+                    <th>Meet Up Event</th>
+                    <th>City</th>
+                    <th>Lead</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="./assets/images/best-seller1.png" alt="Networking" /></td>
+                    <td>Austin, TX</td>
+                    <td>Jane Fonda</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./assets/images/best-seller2.png" alt="Sweater Exchange" /></td>
+                    <td>Los Angeles, CA</td>
+                    <td>Sindy Lui</td>
+                    <td>Full</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/images/best-seller3.png" alt="Little Black Dress Up Day" />
+                    </td>
+                    <td>San Francisco, CA</td>
+                    <td>Lanea Tam</td>
+                    <td>Full</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./assets/images/best-seller4.png" alt="Bike Around Town" /></td>
+                    <td>Miami, Fl</td>
+                    <td>John Signal</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./assets/images/best-seller5.png" alt="Fly Around" /></td>
+                    <td>Bend, OR</td>
+                    <td>Stacy Issaic</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/images/best-seller6.png" alt="Fry Pan" />
+                    </td>
+                    <td>Chicago, IL</td>
+                    <td>Steve Ram</td>
+                    <td>Full</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/images/best-seller7.png" alt="Fry Pan" />
+                    </td>
+                    <td>Nashville, TN</td>
+                    <td>Shanaya John</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./assets/images/best-seller8.png" alt="Blender" /></td>
+                    <td>Boston, MA</td>
+                    <td>Kim Thompson</td>
+                    <td>Full</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./assets/images/best-seller9.png" alt="Cutting Board" /></td>
+                    <td>New York, NY</td>
+                    <td>Mary Peck</td>
+                    <td>Full</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/images/best-seller10.png" alt="Fry Pan" />
+                    </td>
+                    <td>New Orleans, LA</td>
+                    <td>Randy Holms</td>
+                    <td>Full</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+          <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script type="text/JavaScript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+          <!-- BEG JavaScript -->
+          <script>
+            $(document).ready(function () {
+              $("table#your-table-items").tablesorter({
+                sortList: [[2, 1]],
+                CssAsc: "tablesorter-headerAsc",
+                CssDesc: "tablesorter-headerDesc"
+              });
+            });
+          </script>
+          <!-- END JavaScript -->
+        </body>
+        
+        </html>
+      </div>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+      <div>
+       <!-- dropdown-menu text scroll -->  
+       <h3>Recycle Clothing Exchange Meet Up</h3>
+       <div class="ex1"><p>Recycle exchange clothing fashion is a concept that aims to promote sustainability and reduce waste in the fashion industry. It involves exchanging or selling pre-owned clothing items that are in good condition, rather than disposing of them. This can be done through various means, such as swapping with friends, donating to thrift stores or charity organizations, or selling through online platforms.</p>
+
+        <p>Recycling and exchanging clothes not only benefits the environment but also promotes a circular economy, where materials and resources are kept in use for as long as possible. It also encourages people to be mindful of their consumption habits and to consider the impact of their choices on the environment.</p>
+        
+        <p>Moreover, with the rise of fast fashion and its negative impact on the environment, recycle exchange clothing fashion has become increasingly popular as a way to reduce the environmental footprint of the fashion industry.</p><p> Overall, it is a step towards a more sustainable and responsible approach to fashion.</p></div>
+    </aside>
+  </section>
+  <div class="to-top"><a href="#"></a></div>
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+</html>

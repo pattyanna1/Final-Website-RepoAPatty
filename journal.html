@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Nav bar flex</title>
+
+ <!-- accordian with youtube 1-->
+  <style>
+    article {
+      width: 800px;
+      padding: 20px 100px;
+    }
+
+    .accordion {
+      color: #00a2ff;
+      cursor: pointer;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+
+    .active,
+    .accordion:hover {
+      color: #339999;
+    }
+
+    .panel {
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+
+<!-- accordian with youtube 2-->
+<style>
+  article {
+    width: 800px;
+    padding: 20px 100px;
+  }
+
+  .accordion {
+    color: #00a2ff;
+    cursor: pointer;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  .active,
+  .accordion:hover {
+    color: #339999;
+  }
+
+  .panel {
+    display: none;
+    overflow: hidden;
+  }
+</style>
+
+<!-- accordian with youtube 3-->
+<style>
+  article {
+    width: 800px;
+    padding: 20px 100px;
+  }
+
+  .accordion {
+    color: #00a2ff;
+    cursor: pointer;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  .active,
+  .accordion:hover {
+    color: #339999;
+  }
+
+  .panel {
+    display: none;
+    overflow: hidden;
+  }
+</style>
+
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/logo.png" alt="dish logo"/>
+  <nav>
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="gallery.html">GALLERY</a>
+        </li>
+        <li>
+          <a href="events.html">EVENTS</a>
+        </li>
+        <li>
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="team.html">TEAM</a>
+        </li>
+        <li>
+          <a href="#" class="active-page">JOURNAL</a>
+        </li>
+      </ul>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="events.html">EVENTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="team.html">TEAM</a>
+        <a href="#" class="active-menu-item">JOURNAL</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:20px;">
+    <article style="width: 70%; float: left; ">
+      <div style="border-right: 1px solid rgb(181, 181, 181);">
+        <!-- TODO: add content -->
+
+        <!-- accordian with youtube 1 -->
+        <article>
+          <h3>Winter Color Palettes</h3>
+          <div>
+            <h4>Current trends by Jane Smith</h4>
+            <p>
+              Winter color palettes often feature cool and muted colors that reflect the season's natural surroundings, such as snowy landscapes and clear blue skies. Common colors in winter palettes include shades of blue, gray, white, black, and silver, as well as deep jewel tones like emerald, amethyst, and sapphire. Warm and rich colors like burgundy, chocolate brown, and forest green are also popular in winter palettes, as they evoke feelings of coziness and warmth. Overall, winter color palettes tend to be more subdued and elegant, with a focus on texture and layering to create depth and interest.
+            </p>
+            <div class="panel">
+              <span style="width: 500px; word-wrap: break-word;">
+                <h2>Winter Color Palette</h2>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/jSz0ZE653M8"
+                  title="Winter Color Palette" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+              </span>
+            </div>
+            <div class="accordion" style="text-align: right;">More</div>
+          </div>
+        </article>
+
+        <!-- accordian with youtube 2-->
+        <article>
+          <h3>Spring Time Adventures</h3>
+          <div>
+            <h4>Foraging Edible Wildflowers by Emily Ho</h4>
+            <p>
+              California is home to a wide variety of edible flowers that can be foraged and used in culinary applications. Some of the most commonly foraged edible flowers in California include nasturtium, chamomile, rose, lavender, and violets. These flowers can be used in salads, teas, desserts, and cocktails to add flavor and color. However, it is important to be cautious when foraging for edible flowers and to only consume flowers that have been positively identified as safe to eat. Additionally, it is important to only forage from areas that have not been treated with pesticides or other harmful chemicals.
+            </p>
+            <div class="panel">
+              <span style="width: 500px; word-wrap: break-word;">
+                <h2>Foraging Edible Wildflowers</h2>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/_Jz5W5IuOjI"
+                  title="Foraging Edible Wildflowers" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+              </span>
+            </div>
+            <div class="accordion" style="text-align: right;">More</div>
+          </div>
+        </article>
+
+         <!-- accordian with youtube 3-->
+         <article>
+          <h3>California Coastal Hikes</h3>
+          <div>
+            <h4>Big Sur Hidden Trails by Kate Gonzales</h4>
+            <p>
+              
+Big Sur, located along the Central Coast of California, offers some of the most beautiful and scenic hiking trails in the state. These hikes range from easy strolls to challenging treks through rugged terrain, with breathtaking views of the coastline and forests.
+
+Some popular hikes in Big Sur include the McWay Falls Trail, which offers stunning views of a 80-foot waterfall cascading into the ocean, and the Pfeiffer Falls Trail, which takes you through a redwood forest to a scenic waterfall.
+            </p>
+            <div class="panel">
+              <span style="width: 500px; word-wrap: break-word;">
+                <h2>California Coastal Hikes</h2>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/1_MJaaVkorI"
+                  title="California Coastal Hikes" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+              </span>
+            </div>
+            <div class="accordion" style="text-align: right;">More</div>
+          </div>
+        </article>
+
+      </div>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+      <div>
+
+    <!-- list of blog entries 1-->
+<h2>Recent Posts</h2>
+  <ul>
+    <li>Winter Color Palettes</li>
+    <li>Spring Time Adventures</li>
+    <li>California Coastal Hikes</li>
+  </ul> 
+    
+  <!-- list of blog entries 2-->
+<h2>Archives</h2>
+<ul>
+  <li>January</li>
+  <li>February</li>
+  <li>March</li>
+  <li>April</li>
+  
+</ul> 
+
+      </div>
+    </aside>
+  </section>
+  <div class="to-top"><a href="#"></a></div>
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+<!-- BEG JavaScript -->
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.previousElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        this.innerHTML = "More";
+      } else {
+        panel.style.display = "block";
+        this.innerHTML = "Less";
+      }
+    });
+  }
+</script>
+
+
+<!-- END JavaScript -->
+
+</html>
